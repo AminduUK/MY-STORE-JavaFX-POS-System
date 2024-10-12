@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="495.0" prefWidth="428.0" style="-fx-background-color: #28bd89;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.item.ItemDetailFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#382b60" height="27.0" layoutX="116.0" layoutY="130.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="206.0" />
+      <Label layoutX="147.0" layoutY="131.0" text="CUSTOMER DETAILS" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="122.0" fitWidth="428.0">
+         <image>
+            <Image url="@../image/mysotre_logo.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtDisplayPackSize" editable="false" layoutX="37.0" layoutY="352.0" prefHeight="26.0" prefWidth="152.0" />
+      <TextField fx:id="txtDisplayUnitPrice" editable="false" layoutX="38.0" layoutY="405.0" prefHeight="26.0" prefWidth="152.0" />
+      <TextField fx:id="txtDisplayQuantity" editable="false" layoutX="239.0" layoutY="351.0" prefHeight="26.0" prefWidth="152.0" />
+      <TextField fx:id="txtDisplayItemCode" editable="false" layoutX="38.0" layoutY="191.0" prefHeight="26.0" prefWidth="152.0" />
+      <Label layoutX="37.0" layoutY="335.0" text="PACK SIZE">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="388.0" text="UNIT PRICE">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="239.0" layoutY="335.0" text="QUANTITY">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="174.0" text="ITEM CODE">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnUpdate3" layoutX="39.0" layoutY="451.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" style="-fx-background-color: #f1c40f;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete4" layoutX="339.0" layoutY="452.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" style="-fx-background-color: #c0392b;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="37.0" layoutY="228.0" text="ITEM NAME">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtDisplayDescription" editable="false" layoutX="37.0" layoutY="244.0" prefHeight="84.0" prefWidth="354.0" />
+   </children>
+</AnchorPane>
